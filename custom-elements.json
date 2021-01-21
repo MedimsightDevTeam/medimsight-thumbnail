@@ -1,0 +1,146 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "medimsight-thumbnail",
+      "path": "./medimsight-thumbnail.js",
+      "description": "An example element.",
+      "attributes": [
+        {
+          "name": "seriesId",
+          "description": "The image identifier.",
+          "type": "string",
+          "default": "\"preview\""
+        },
+        {
+          "name": "slice",
+          "description": "The current slice number.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "sliceinpx",
+          "description": "The current slice in pixels to jump.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "backgroundHeight",
+          "description": "The full composed image height.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "componentHeight",
+          "description": "The current host height.",
+          "type": "number",
+          "default": "96"
+        },
+        {
+          "name": "thumbnailHeight",
+          "description": "The background image height.",
+          "type": "number",
+          "default": "96"
+        },
+        {
+          "name": "backgroundImageUrl",
+          "description": "The composed background image url.",
+          "type": "string",
+          "default": "\"/dev/assets/preview.jpg\""
+        },
+        {
+          "name": "sliceMax",
+          "description": "The maximum slice available.",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "backgroundImgPromise",
+          "description": "The promise function for backgroun change.",
+          "type": "object"
+        }
+      ],
+      "properties": [
+        {
+          "name": "seriesId",
+          "attribute": "seriesId",
+          "description": "The image identifier.",
+          "type": "string",
+          "default": "\"preview\""
+        },
+        {
+          "name": "slice",
+          "attribute": "slice",
+          "description": "The current slice number.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "sliceinpx",
+          "attribute": "sliceinpx",
+          "description": "The current slice in pixels to jump.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "backgroundHeight",
+          "attribute": "backgroundHeight",
+          "description": "The full composed image height.",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "componentHeight",
+          "attribute": "componentHeight",
+          "description": "The current host height.",
+          "type": "number",
+          "default": "96"
+        },
+        {
+          "name": "thumbnailHeight",
+          "attribute": "thumbnailHeight",
+          "description": "The background image height.",
+          "type": "number",
+          "default": "96"
+        },
+        {
+          "name": "backgroundImageUrl",
+          "attribute": "backgroundImageUrl",
+          "description": "The composed background image url.",
+          "type": "string",
+          "default": "\"/dev/assets/preview.jpg\""
+        },
+        {
+          "name": "sliceMax",
+          "attribute": "sliceMax",
+          "description": "The maximum slice available.",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "divStyles",
+          "type": "object",
+          "default": "{\"backgroundRepeat\":\"no-repeat\",\"backgroundPositionY\":\"0px\",\"height\":\"96px\",\"width\":\"96px\",\"border\":\"0px solid\",\"transition\":\"border 0.3s ease 0s\",\"position\":\"relative\",\"float\":\"left\"}"
+        },
+        {
+          "name": "backgroundImgPromise",
+          "attribute": "backgroundImgPromise",
+          "description": "The promise function for backgroun change.",
+          "type": "object"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ],
+      "cssParts": [
+        {
+          "name": "button",
+          "description": "The button"
+        }
+      ]
+    }
+  ]
+}
